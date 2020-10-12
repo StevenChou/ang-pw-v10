@@ -1,10 +1,10 @@
 <div class="container">
   <div class="columns is-centered">
     <div class="box column is-one-third">
-      <h1 class="title has-text-centered">Password Generator</h1>
+      <h1 class="title has-text-centered">密碼產生器</h1>
 
       <div class="field">
-        <label>Length</label>
+        <label>密碼長度</label>
         <input class="input" (input)="onChangeLength($event.target.value)" />
       </div>
 
@@ -12,7 +12,7 @@
         <div class="control">
           <label class="checkbox">
             <input (change)="onChangeUseLetters()" type="checkbox" />
-            Use Letters
+            使用英文字母
           </label>
         </div>
       </div>
@@ -21,7 +21,7 @@
         <div class="control">
           <label class="checkbox">
             <input (change)="onChangeUseNumbers()" type="checkbox" />
-            Use Numbers
+            使用數字
           </label>
         </div>
       </div>
@@ -30,7 +30,7 @@
         <div class="control">
           <label class="checkbox">
             <input (change)="onChangeUseSymbols()" type="checkbox" />
-            Use Symbols
+            使用符號
           </label>
         </div>
       </div>
@@ -42,11 +42,11 @@
         (click)="onButtonClick()"
         class="button is-link is-fullwidth"
       >
-        Generate!
+        產生!
       </button>
 
       <div class="box" *ngIf="password">
-        <label>Your Password</label>
+        <label>您的密碼為</label>
         <input class="input" [value]="password" />
       </div>
     </div>
